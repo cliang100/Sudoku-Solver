@@ -87,7 +87,9 @@ def solve_sudoku(board):
     else:
         print('\nThe provided puzzle is unsolvable.')
     return gameboard
-puzzle = [
+
+if __name__ == '__main__':
+    puzzle = [
   [0, 0, 2, 0, 0, 8, 0, 0, 0],
   [0, 0, 0, 0, 0, 3, 7, 6, 2],
   [4, 3, 0, 0, 0, 0, 8, 0, 0],
@@ -98,6 +100,4 @@ puzzle = [
   [0, 0, 0, 5, 1, 9, 0, 0, 8],
   [1, 7, 0, 0, 0, 6, 0, 0, 5]
 ]
-
-if __name__ == '__main__':
     solve_sudoku(puzzle)
